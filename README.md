@@ -1,120 +1,120 @@
-# M5Stick-NEMO
-Firmware for high-tech pranks on M5Stack ESP32 Devices
+#M5Stick-NEMO
+Firmware para pegadinhas de alta tecnologia em dispositivos M5Stack ESP32
 
-![M5-Nemo Matrix Logo](https://github.com/n0xa/m5stick-nemo/blob/main/NEMOMatrix.png)
-Logo by @unagironin
+![Logotipo da matriz M5-Nemo](https://github.com/n0xa/m5stick-nemo/blob/main/NEMOMatrix.png)
+Logotipo de @unagironin
 
-## Name and Background
-NEMO started a personal project to help me learn more about ESP32 development with the Arduino IDE. I decided to replicate a few common, trending pranks that were getting a lot of attention in the tech community, as a challenge to myself, and to also better understand these attacks.  
-NEMO is named after the small, clever and stubborn fish in Finding Nemo. This project stands in contrast to another high-tech gadget that's associated with certain sea-dwelling creatures. I did want to prove that there are a lot of things you can do with a small development kit and some curiosity. I have no delusions of superseding the capabilities of any similar device with this project. It's just for fun, and my own education.  
+## Nome e histórico
+NEMO iniciou um projeto pessoal para me ajudar a aprender mais sobre o desenvolvimento do ESP32 com o Arduino IDE. Decidi replicar algumas pegadinhas comuns e populares que estavam recebendo muita atenção da comunidade de tecnologia, como um desafio para mim mesmo, e também para entender melhor esses ataques.
+NEMO recebeu o nome do peixe pequeno, inteligente e teimoso de Procurando Nemo. Este projeto contrasta com outro dispositivo de alta tecnologia associado a certas criaturas marinhas. Eu queria provar que há muitas coisas que você pode fazer com um pequeno kit de desenvolvimento e um pouco de curiosidade. Não tenho ilusões de substituir as capacidades de qualquer dispositivo semelhante neste projeto. É apenas para diversão e para minha própria educação.
 
-![M5-Nemo on M5StickC family and M5Cardputer](https://github.com/n0xa/m5stick-nemo/blob/main/M5-Nemo.jpg)
+![M5-Nemo na família M5StickC e M5Cardputer](https://github.com/n0xa/m5stick-nemo/blob/main/M5-Nemo.jpg)
 
-## Features
-* [TV B-Gone](http://www.righto.com/2010/11/improved-arduino-tv-b-gone.html) port (thanks to MrArm's [HAKRWATCH](https://github.com/MrARM/hakrwatch)) to shut off many infrared-controlled TVs, projectors and other devices
-* [AppleJuice](https://github.com/ECTO-1A/AppleJuice) iOS Bluetooth device pairing spam
-* Bluetooth device notification spamming for SwiftPair (Windows) and Android
-* WiFi Spam - Funny SSIDs, WiFi Rickrolling, and a Random mode that creates hundreds of randomly-named SSIDs per minute
-* WiFi NEMO Portal - A captive portal that tries to social engineer email credentials - saves usernames and passwords to SD Card (if inserted into a supported reader)
-* WiFi SSID Scanner - Display 2.4 GHz SSIDs nearby, get information about them, and even clone the SSIDs in NEMO Portal
-* User-adjustable 24 Hour digital clock backed by the M5 Stick RTC so it holds relatively stable time even in deep sleep and low battery mode
-* EEPROM-backed Settings for rotation, brightness, automatic dimming and NEMO Portal SSID
-* Battery level and credits in settings menu
+## Características
+* Porta [TV B-Gone](http://www.righto.com/2010/11/improved-arduino-tv-b-gone.html) (graças ao [HAKRWATCH](https://github.com) do MrArm /MrARM/hakrwatch)) para desligar muitas TVs, projetores e outros dispositivos controlados por infravermelho
+* [AppleJuice](https://github.com/ECTO-1A/AppleJuice) Spam de emparelhamento de dispositivo Bluetooth iOS
+* Spam de notificação de dispositivo Bluetooth para SwiftPair (Windows) e Android
+* WiFi Spam - SSIDs engraçados, WiFi Rickrolling e um modo aleatório que cria centenas de SSIDs nomeados aleatoriamente por minuto
+* Portal NEMO WiFi - Um portal cativo que tenta criar credenciais de e-mail de engenharia social - salva nomes de usuário e senhas no cartão SD (se inserido em um leitor compatível)
+* WiFi SSID Scanner - Exiba SSIDs de 2,4 GHz próximos, obtenha informações sobre eles e até mesmo clone os SSIDs no Portal NEMO
+* Relógio digital de 24 horas ajustável pelo usuário, apoiado pelo M5 Stick RTC, para manter o tempo relativamente estável, mesmo em modo de suspensão profunda e bateria fraca
+* Configurações apoiadas por EEPROM para rotação, brilho, escurecimento automático e SSID do Portal NEMO
+* Nível da bateria e créditos no menu de configurações
 
-## User Interface
-There are three main controls:
-* Home - Stops the current process and returns you to the menu from almost anywhere in NEMO
-* Next - Moves the cursor to the next menu option. In function modes, this usually stops the process and returns you to the previous menu.
-* Select - Activates the currently-selected menu option, and wakes up the dimmed screen in function modes  
+## Interface de usuário
+Existem três controles principais:
+* Home - Interrompe o processo atual e retorna ao menu de praticamente qualquer lugar no NEMO
+* Próximo – Move o cursor para a próxima opção do menu. Nos modos de função, isso geralmente interrompe o processo e retorna ao menu anterior.
+* Selecionar - Ativa a opção de menu atualmente selecionada e ativa a tela esmaecida nos modos de função
 
-* StickC and StickC-Plus
-  * Power: Long-press the power button for 6 seconds to turn off the unit
-  * Home: Tap the power button (closest to the USB port)
-  * Next: Tap the side button
-  * Select: Tap the M5 button on the front of the unit  
+* StickC e StickC-Plus
+   * Energia: pressione longamente o botão liga/desliga por 6 segundos para desligar a unidade
+   * Home: Toque no botão liga / desliga (mais próximo da porta USB)
+   * Próximo: Toque no botão lateral
+   * Selecione: Toque no botão M5 na frente da unidade
 
-* Cardputer
-  * Home: Tap the Esc/~/` key or the Left-Arrow/, key
-  * Next/Prev: Tap the Down-Arrow/. key and Up-Arrow/; keys to navigate
-  * Select: Tap the OK/Enter key or Right-Arrow/? key  
+* Computador de cartão
+   * Home: Toque na tecla Esc/~/` ou na tecla Seta para Esquerda/,
+   * Próximo/Anterior: Toque na seta para baixo/. tecla e seta para cima/; teclas para navegar
+   * Selecione: Toque na tecla OK/Enter ou Seta para a direita/? chave
 
-## NEMO Portal
-In NEMO Portal mode, NEMO activates an open WiFi Hotspot named "Nemo Free WiFi" (configurable in portal.h) with DNS, DHCP and Web servers activated. 
-* NEMO Portal serves a fake login page that claims to provide internet access if you log in.
-* This is a social engineering attack, and will log the username and passwords entered on the page. 
-* From the Wifi Scan details, you can clone an existing SSID from the scan list. Exiting NEMO Portal will clear the Evil Twin SSID
-* You can view captured credentials by connecting to the portal from your own device and browsing to http://172.0.0.1/creds
-* You can set a custom SSID by connecting to the portal from your own device and browsing to http://172.0.0.1/ssid
-* If your device supports EEPROM for settings, the custom SSID you enter will be saved as the default, even if powered off.
-* If your device has an SD Card reader with a FAT filesystem formatted card inserted, the usernames and passwords will be logged to nemo-portal-creds.txt on the SD Card for you to peruse later. 
-* SD Card support is only enabled by default on the M5Stack Cardputer platform. It can be enabled on M5Stick devices but an SD Card reader must be built and attached to the front panel pin header.
-* NEMO Portal is only for use on professional engagements with a valid scope of work, educational or demonstration purposes. Storage, sale, or use of personal information without consent is against the law. 🤓
+## Portal NEMO
+No modo NEMO Portal, o NEMO ativa um Hotspot WiFi aberto chamado "Nemo Free WiFi" (configurável em portal.h) com servidores DNS, DHCP e Web ativados.
+* O Portal NEMO exibe uma página de login falsa que afirma fornecer acesso à Internet se você fizer login.
+* Este é um ataque de engenharia social e registrará o nome de usuário e as senhas inseridas na página.
+* Nos detalhes do Wifi Scan, você pode clonar um SSID existente na lista de varredura. Sair do Portal NEMO limpará o SSID Evil Twin
+* Você pode visualizar as credenciais capturadas conectando-se ao portal a partir do seu próprio dispositivo e navegando até http://172.0.0.1/creds
+* Você pode definir um SSID personalizado conectando-se ao portal a partir do seu próprio dispositivo e navegando até http://172.0.0.1/ssid
+* Se o seu dispositivo suportar EEPROM para configurações, o SSID personalizado inserido será salvo como padrão, mesmo se estiver desligado.
+* Se o seu dispositivo tiver um leitor de cartão SD com um cartão formatado em sistema de arquivos FAT inserido, os nomes de usuário e senhas serão registrados em nemo-portal-creds.txt no cartão SD para você ler mais tarde.
+* O suporte a cartão SD só está habilitado por padrão na plataforma M5Stack Cardputer. Ele pode ser habilitado em dispositivos M5Stick, mas um leitor de cartão SD deve ser construído e conectado ao pino do painel frontal.
+* O Portal NEMO deve ser usado apenas em compromissos profissionais com um escopo de trabalho válido, para fins educacionais ou de demonstração. O armazenamento, venda ou uso de informações pessoais sem consentimento é contra a lei. 🤓
 
-## Install from M5Burner
-This is the absolute easiest way to get NEMO
-* [M5Stick C Plus Quick Start](https://docs.m5stack.com/en/quick_start/m5stickc_plus/uiflow) has links to the M5Burner app for Linux, MacOS and Windows. This is the official tool to install UIFlow and other official firmware. I provide up-to-date binaries for NEMO there.
-* Launch M5Burner
-* Select "StickC" from the menu on the left (or StampS3 for Cardputer)
-* Use the search at the top of the app to look for "NEMO". My official builds will be uploaded by "4x0nn" and have photos.
-* Click Download
-* Click Burn
+## Instalar a partir do M5Burner
+Esta é a maneira mais fácil de obter NEMO
+* [Início rápido do M5Stick C Plus](https://docs.m5stack.com/en/quick_start/m5stickc_plus/uiflow) possui links para o aplicativo M5Burner para Linux, MacOS e Windows. Esta é a ferramenta oficial para instalar UIFlow e outros firmware oficiais. Eu forneço binários atualizados para NEMO lá.
+* Inicie o M5Burner
+* Selecione "StickC" no menu à esquerda (ou StampS3 para Cardputer)
+* Use a busca na parte superior do aplicativo para procurar por “NEMO”. Minhas builds oficiais serão enviadas por "4x0nn" e terão fotos.
+* Clique em Baixar
+* Clique em Gravar
 
-## Install .bin files manually with esptool.py
-* Install ESP-IDF tools per the [Espressif Getting Started Guide](https://docs.espressif.com/projects/esp-idf/en/latest/esp32/get-started/)
-* Open the esp-idf CMD tool (on Windows) - on Mac or Linux, esp-idf.py and esptool.py should be in the system path.
+## Instale arquivos .bin manualmente com esptool.py
+* Instale as ferramentas ESP-IDF de acordo com o [Guia de primeiros passos do Espressif](https://docs.espressif.com/projects/esp-idf/en/latest/esp32/get-started/)
+* Abra a ferramenta esp-idf CMD (no Windows) - no Mac ou Linux, esp-idf.py e esptool.py devem estar no caminho do sistema.
 * esptool.py --port COMPORT -b 115200 write_flash -z 0x0 M5Nemo-VERSION.bin
-  * port may be a COM port e.g. COM4, COM11 on Windows. On Mac and Linux it will usually be in /dev such as /dev/ttyUSB0, /dev/ttyACM0 or /dev/cu.usbserial-3
-  * M5Nemo-VERSION.bin should be a version you downloaded from a GitHub Release -- preferably the latest available.
+   * porta pode ser uma porta COM, por ex. COM4, COM11 no Windows. No Mac e Linux geralmente estará em /dev como /dev/ttyUSB0, /dev/ttyACM0 ou /dev/cu.usbserial-3
+   * M5Nemo-VERSION.bin deve ser uma versão que você baixou de uma versão do GitHub – de preferência a mais recente disponível.
 
-## Building from Source
-If you want to customize NEMO or contribute to the project, you should be familiar with building NEMO from source.
-* Install Arduino IDE. I've used Arduino 1.8 on Linux and Windows, and Arduino 2.2 on Windows successfully.
-* Install the M5Stack boards for Arduino IDE: In File -> Preferences, paste this URL into the "Boards Manager URLs" text box. Use commas between URLs if there are already URLs present.  https://m5stack.oss-cn-shenzhen.aliyuncs.com/resource/arduino/package_m5stack_index.json
-* If M5Stack -> M5Stick-C-Plus doesn't show up under Tools -> Boards, then use Tools -> Boards -> Boards Manager and search for M5Stack. This will install support for most of the M5Stack boards including the Stick C Plus.
-* Ensure the correct device model (e.g. M5Stick-C, M5Stick-C-Plus or M5Cardputer) is selected in the boards menu.
-* Install necessary libraries. In Sketch -> Include Library -> Library Manager, search for and install the following libraries and any dependencies they require:
-  * M5StickCPlus, M5StickC or M5Cardputer
-  * IRRemoteESP8266
-* Un-comment the appropriate `#define` line near the top for your platform (STICK_C, STICK_C_PLUS or CARDPUTER)
-* Switch partition schemes. `Tools` -> `Partition Scheme` -> `No OTA (Large APP)` - sometimes this option is labeled `Huge APP` 
-* Configuration
-  * The code should compile cleanly and work on an M5Stick C Plus out of the box from the master branch or a release tag.
-  * Uncomment only the one appropriate `#define` option or compiler errors will occur. 
-  * If for some reason the screen jumps from very dim at level 0 to almost fully bright at level 1 and further brightness levels don't affect anything, set the pct_brightness variable to false.
-* Compile and upload the project
+## Construindo a partir da fonte
+Se quiser personalizar o NEMO ou contribuir com o projeto, você deve estar familiarizado com a construção do NEMO a partir do código-fonte.
+* Instale o Arduino IDE. Usei o Arduino 1.8 no Linux e Windows e o Arduino 2.2 no Windows com sucesso.
+* Instale as placas M5Stack para Arduino IDE: Em Arquivo -> Preferências, cole esta URL na caixa de texto "URLs do Gerenciador de Placas". Use vírgulas entre URLs se já houver URLs presentes. https://m5stack.oss-cn-shenzhen.aliyuncs.com/resource/arduino/package_m5stack_index.json
+* Se M5Stack -> M5Stick-C-Plus não aparecer em Ferramentas -> Placas, use Ferramentas -> Placas -> Gerenciador de placas e procure por M5Stack. Isso instalará o suporte para a maioria das placas M5Stack, incluindo o Stick C Plus.
+* Certifique-se de que o modelo correto do dispositivo (por exemplo, M5Stick-C, M5Stick-C-Plus ou M5Cardputer) esteja selecionado no menu de placas.
+* Instale as bibliotecas necessárias. Em Sketch -> Incluir Biblioteca -> Gerenciador de Biblioteca, procure e instale as seguintes bibliotecas e quaisquer dependências necessárias:
+   * M5StickCPlus, M5StickC ou M5Cardputer
+   *IRRemotoESP8266
+* Remova o comentário da linha `#define` apropriada perto do topo da sua plataforma (STICK_C, STICK_C_PLUS ou CARDPUTER)
+* Alternar esquemas de partição. `Ferramentas` -> `Esquema de partição` -> `Sem OTA (APP grande)` - às vezes esta opção é rotulada como `APP enorme`
+* Configuração
+   * O código deve ser compilado de forma limpa e funcionar em um M5Stick C Plus pronto para uso a partir do branch master ou de uma tag de lançamento.
+   * Remova o comentário apenas da opção `#define` apropriada ou ocorrerão erros do compilador.
+   * Se por algum motivo a tela saltar de muito escura no nível 0 para quase totalmente brilhante no nível 1 e outros níveis de brilho não afetarem nada, defina a variável pct_brightness como falsa.
+* Compile e carregue o projeto
 
-## Troubleshooting
-* Several features output debugging information to the serial monitor. Use the Serial Monitor feature in Arduino IDE or M5Burner to gather this information. It may have useful hints. When filing a bug report, it often helps to include serial monitor output.
-* Reset the EEPROM. On models with EEPROM settings support, use "Clear Settings" from the settings menu, or hold the "Next" button (Side key on StickC models, Tab or Down Arrow on Cardputer) while powering on. 
-* TV-B-Gone's IR LED can be observed through a smart phone camera, emitting a pale purple beam of light. If it seems to be on constantly, or if it never flashes at all during TV-B-Gone operations, something is wrong. Report a bug. There's a known issue with TVBG not working after using Bluetooth spam or random wifi spam.
-* Try viewing wifi lists from several different devices if you suspect wifi spam isn't working. Sometimes, Linux network manager can see networks that smart phones cannot. Please include the results of this testing if reporting wifi spam problems.
-* Apple has patched a lot of Bluetooth stuff since summer 2023. If testing AppleJuice, try some of the AppleTV device types, as they tend to be more reliable due to apple not filtering out weaker bluetooth signals for that platform.
-## Reporting Bugs
-Please report bugs via GitHub Issues. These are easier to track than comments on social media posts, M5Burner entries, etc. If something isn't working, please include:
-* Firmware version
-* How you installed it (M5Burner, compiled yourself, esptool.py)
-* Hardware 
-* Specifically what feature and options are not working
-* How you determined that it is not working and what testing you did. Include device models and operating systems of what you tested with, and any errors or relevant output from Serial Monitor, if applicable.
-* If you figure out how to fix a bug you identified, PRs are welcome!
+## Solução de problemas
+* Vários recursos enviam informações de depuração para o monitor serial. Use o recurso Serial Monitor no Arduino IDE ou M5Burner para coletar essas informações. Pode conter dicas úteis. Ao preencher um relatório de bug, geralmente ajuda incluir a saída do monitor serial.
+*Reinicialize a EEPROM. Em modelos com suporte para configurações EEPROM, use "Limpar configurações" no menu de configurações ou segure o botão "Avançar" (tecla lateral nos modelos StickC, Tab ou seta para baixo no Cardputer) enquanto liga.
+* O LED IR do TV-B-Gone pode ser observado através da câmera de um smartphone, emitindo um feixe de luz roxo claro. Se parecer estar ligado constantemente ou se nunca piscar durante as operações do TV-B-Gone, algo está errado. Reportar um erro. Há um problema conhecido com o TVBG que não funciona após usar spam de Bluetooth ou spam de Wi-Fi aleatório.
+* Tente visualizar listas de Wi-Fi de vários dispositivos diferentes se você suspeitar que o spam de Wi-Fi não está funcionando. Às vezes, o gerenciador de rede Linux pode ver redes que os smartphones não conseguem. Inclua os resultados deste teste se estiver relatando problemas de spam de Wi-Fi.
+* A Apple corrigiu muitas coisas do Bluetooth desde o verão de 2023. Se estiver testando o AppleJuice, experimente alguns dos tipos de dispositivos AppleTV, pois eles tendem a ser mais confiáveis ​​porque a Apple não filtra os sinais de Bluetooth mais fracos para essa plataforma.
+## Relatando Bugs
+Por favor, reporte bugs através do GitHub Issues. Eles são mais fáceis de rastrear do que comentários em postagens de mídia social, entradas do M5Burner, etc. Se algo não estiver funcionando, inclua:
+* Versão do firmware
+* Como você instalou (M5Burner, compilado você mesmo, esptool.py)
+* Ferragens
+* Especificamente quais recursos e opções não estão funcionando
+* Como você determinou que não está funcionando e quais testes você fez. Inclua modelos de dispositivos e sistemas operacionais com os quais você testou e quaisquer erros ou resultados relevantes do Serial Monitor, se aplicável.
+* Se você descobrir como consertar um bug identificado, PRs serão bem-vindos!
 
-## Contributing
-Contributions are welcome. 
-* Pliease look at the GitHub Issues for the project. There are feature suggestions and bugs reported there, and I'd appreciate PRs that address those.
-* When submitting a Pull Request, please target the develop branch. The easiest way to do this is to fork ALL branches, or to simply create a "develop" branch in your own fork, then use GitHub to Sync your develop branch.
-* Take note of how certain hardware (like the LED and RTC) are defined and gated in the code and try to stick to those patterns. Also, use the definitions for FGCOLOR, BGCOLOR, TEXT_SIZE* and the DISP alias when outputting things to the built-in display.
+## Contribuindo
+Contribuições são bem-vindas.
+* Por favor, consulte os problemas do GitHub para o projeto. Há sugestões de recursos e bugs relatados lá, e eu apreciaria os PRs que abordassem isso.
+* Ao enviar uma solicitação pull, direcione o branch de desenvolvimento. A maneira mais fácil de fazer isso é bifurcar TODAS as ramificações ou simplesmente criar uma ramificação "desenvolver" em sua própria bifurcação e, em seguida, usar o GitHub para sincronizar sua ramificação de desenvolvimento.
+* Observe como determinados hardwares (como LED e RTC) são definidos e bloqueados no código e tente seguir esses padrões. Além disso, use as definições para FGCOLOR, BGCOLOR, TEXT_SIZE* e o alias DISP ao enviar coisas para o display integrado.
 
-Things I'd like help on:
-* Improved localization/translations of the menu, not just NEMO Portal HTML.
-  * Probably needs a new .h file
-  * Be configurable in settings and use an eeprom byte to save the setting
-  * Make gratuitous use of `const` in the implementation so that localization strings are stored only in, and referenced directly from, the flash storage as opposed to using lots of SRAM.
-* Infrared
-  * A new "Region" of TV-B-Gone that's full of additional IR codes that can turn RGB LED strips, air conditioners, fans, sound bars and the like on and off
-  * A way to convert or use flipper zero IR codes from within NEMO's code-base
-* Figure out a way to read and display battery level on the Cardputer and StickC-Plus2 models that lack an AXP192 PMU. The [battery code in the Cardputer factory demo](https://github.com/m5stack/M5Cardputer-UserDemo/tree/main/main/hal/bat) might be a good place to start.
-* TARGETED Deauthentication against a specific access point only. Deauth spamming PRs will be rejected.
+Coisas nas quais gostaria de ajuda:
+* Melhor localização/traduções do menu, não apenas do HTML do Portal NEMO.
+   * Provavelmente precisa de um novo arquivo .h
+   * Seja configurável nas configurações e use um byte eeprom para salvar a configuração
+   * Faça uso gratuito de `const` na implementação para que as strings de localização sejam armazenadas apenas e referenciadas diretamente no armazenamento flash, em vez de usar muita SRAM.
+* Infravermelho
+   * Uma nova "região" de TV-B-Gone repleta de códigos IR adicionais que podem ligar e desligar faixas de LED RGB, condicionadores de ar, ventiladores, barras de som e similares
+   * Uma maneira de converter ou usar códigos IR zero do flipper a partir da base de código do NEMO
+* Descubra uma maneira de ler e exibir o nível da bateria nos modelos Cardputer e StickC-Plus2 que não possuem uma PMU AXP192. O [código da bateria na demonstração de fábrica do Cardputer](https://github.com/m5stack/M5Cardputer-UserDemo/tree/main/main/hal/bat) pode ser um bom lugar para começar.
+* ALVO Desautenticação somente em um ponto de acesso específico. PRs de spam Deauth serão rejeitados.
 
-Things I probably won't merge in:
-* Bulk wifi deauthentication spamming
-* Bluetooth spam that potentially disrupts health and fitness trackers, smart watches, etc.
+Coisas que provavelmente não irei mesclar:
+* Spam de desautenticação de wifi em massa
+* Spam Bluetooth que potencialmente perturba rastreadores de saúde e condicionamento físico, relógios inteligentes, etc.
