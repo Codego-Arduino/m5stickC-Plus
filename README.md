@@ -1,4 +1,4 @@
-Codigo auterado para Portugues(BR)
+Codigo alterado para Portugues(BR)
 
 #M5Stick-NEMO
 Firmware para pegadinhas de alta tecnologia em dispositivos M5Stack ESP32
